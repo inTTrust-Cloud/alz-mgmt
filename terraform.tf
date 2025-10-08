@@ -25,6 +25,10 @@ provider "alz" {
   library_overwrite_enabled = true
   library_references = [
     {
+      path = "platform/amba"
+      ref  = "2025.09.2" # check the latest library version https://github.com/Azure/Azure-Landing-Zones-Library/tags
+    },
+    {
       custom_url = "${path.root}/lib"
     }
   ]
