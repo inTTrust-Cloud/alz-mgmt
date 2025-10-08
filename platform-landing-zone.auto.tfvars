@@ -117,6 +117,10 @@ custom_replacements = {
     secondary_bastion_subnet_address_prefix              = "10.1.0.64/26"
     secondary_gateway_subnet_address_prefix              = "10.1.0.128/27"
     secondary_private_dns_resolver_subnet_address_prefix = "10.1.0.160/28"
+
+    # AMBA settings
+    amba_resource_group_name                 = "rg-amba-$${starter_location_01}"
+    amba_user_assigned_managed_identity_name = "uami-mgmt-amba-$${starter_location_01}"
   }
 
   /*
@@ -211,6 +215,26 @@ management_group_settings = {
     private_dns_zone_subscription_id            = "$${subscription_id_connectivity}"
     private_dns_zone_region                     = "$${starter_location_01}"
     private_dns_zone_resource_group_name        = "$${dns_resource_group_name}"
+    #AMBA policies
+    amba_alz_management_subscription_id            = "$${subscription_id_management}"
+    amba_alz_resource_group_location               = "$${starter_location_01}"
+    amba_alz_resource_group_name                   = "$${amba_resource_group_name}"
+    amba_alz_user_assigned_managed_identity_name   = "$${amba_user_assigned_managed_identity_name}"
+    amba_alz_action_group_email                    = []
+    amba_alz_arm_role_id                           = []
+    amba_alz_resource_group_tags                   = {}
+    amba_alz_byo_user_assigned_managed_identity_id = ""
+    amba_alz_disable_tag_name                      = ""
+    amba_alz_disable_tag_values                    = []
+    amba_alz_webhook_service_uri                   = []
+    amba_alz_event_hub_resource_id                 = []
+    amba_alz_function_resource_id                  = ""
+    amba_alz_function_trigger_url                  = ""
+    amba_alz_logicapp_resource_id                  = ""
+    amba_alz_logicapp_callback_url                 = ""
+    amba_alz_byo_alert_processing_rule             = ""
+    amba_alz_byo_action_group                      = []
+
   }
   subscription_placement = {
     identity = {
