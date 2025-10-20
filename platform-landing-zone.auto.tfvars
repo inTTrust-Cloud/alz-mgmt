@@ -51,17 +51,17 @@ custom_replacements = {
     # Resource provisioning primary connectivity
     primary_virtual_network_gateway_express_route_enabled = false #true
     primary_virtual_network_gateway_vpn_enabled           = false #true
-    primary_private_dns_zones_enabled                     = true
-    primary_private_dns_auto_registration_zone_enabled    = true
-    primary_private_dns_resolver_enabled                  = true
+    primary_private_dns_zones_enabled                     = false #true
+    primary_private_dns_auto_registration_zone_enabled    = false #true
+    primary_private_dns_resolver_enabled                  = false #true
     primary_bastion_enabled                               = false #true
 
     # Resource provisioning secondary connectivity
     secondary_virtual_network_gateway_express_route_enabled = false #true
     secondary_virtual_network_gateway_vpn_enabled           = false #true
-    secondary_private_dns_zones_enabled                     = true
-    secondary_private_dns_auto_registration_zone_enabled    = true
-    secondary_private_dns_resolver_enabled                  = true
+    secondary_private_dns_zones_enabled                     = false #true
+    secondary_private_dns_auto_registration_zone_enabled    = false #true
+    secondary_private_dns_resolver_enabled                  = false #true
     secondary_bastion_enabled                               = false #true
 
     # Resource names primary connectivity
